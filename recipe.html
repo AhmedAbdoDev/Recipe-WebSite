@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe Details</title>
+  <!-- <link rel="stylesheet" href="recipes.css"> -->
+  <link rel="stylesheet" href="CSS/recipe.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <h1>Recipe Details</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="loading" class="status">Loading recipe...</div>
+    <div id="error" class="status" style="display: none; color: #dc2626;">Recipe not found</div>
+    
+    <div id="recipe-content" class="product-detail" style="display: none;">
+      <a href="projects.html" class="back-link">← Back to Recipes</a>
+      
+      <div class="recipe-header">
+        <img id="recipe-image" class="recipe-image" alt="" />
+        <div class="recipe-info">
+          <h1 id="recipe-title"></h1>
+          <div class="recipe-stats">
+            <span id="ready-time" class="stat"></span>
+            <span id="servings" class="stat"></span>
+            <span id="health-score" class="stat"></span>
+            <span id="likes" class="stat"></span>
+          </div>
+          <div id="diet-tags" class="diet-tags"></div>
+          <div id="dish-types" class="dish-types"></div>
+        </div>
+      </div>
+      
+      <div class="recipe-summary">
+        <h3>Recipe Summary</h3>
+        <div id="recipe-summary-text"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="JS/recipe.js"></script>
+</body>
+</html>
