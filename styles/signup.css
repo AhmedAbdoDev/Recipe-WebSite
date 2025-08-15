@@ -42,7 +42,7 @@ body {
 }
 
 .input-group input {
-  width: 100%;
+  width: 90%;
   padding: 0.7rem;
   border: none;
   border-bottom: 1px solid #ccc;
@@ -101,17 +101,16 @@ button:hover {
   }
 }
 
-
 #toast {
   position: fixed;
   top: 20px;
-  right: 20px; 
+  right: 20px;
   min-width: 250px;
   padding: 15px 20px;
-  background-color: rgb(130, 2, 5); 
+  background-color: rgb(130, 2, 5);
   color: white;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s, transform 0.5s;
@@ -123,5 +122,5 @@ button:hover {
   transform: translateY(0);
 }
 #toast.success {
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
