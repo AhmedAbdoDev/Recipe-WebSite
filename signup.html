@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
     <link rel="stylesheet" href="./styles/signup.css" />
+    <link rel="icon" href="./assets/logo.png" type="image/png" />
   </head>
   <body>
     <div class="card">
@@ -13,24 +14,39 @@
 
       <div class="input-group">
         <label>Name</label>
-        <input type="text" placeholder="Enter your name" />
+        <input type="text" id="username" placeholder="Enter your name" />
       </div>
 
       <div class="input-group">
         <label>Email</label>
-        <input type="email" placeholder="Enter your email" />
+        <input type="email" id="email" placeholder="Enter your email" />
       </div>
 
       <div class="input-group">
         <label>Password</label>
-        <input type="password" placeholder="Enter your password" />
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        />
       </div>
 
-      <button>JOIN THE KITCHEN</button>
+      <div class="input-group">
+        <label>Confirm Password</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="Confirm your password"
+        />
+      </div>
+
+      <button id="signupBtn">JOIN THE KITCHEN</button>
 
       <div class="login-link">
         Already have an account? <a href="login.html">Log in</a>
       </div>
     </div>
+    <div id="toast"></div>
+    <script src="./scripts/signup.js"></script>
   </body>
 </html>
