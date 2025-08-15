@@ -1,17 +1,12 @@
 async function fetchData() {
   const statusEl = document.getElementById("status");
   try {
-    // 1️⃣ قراءة من الملف
     const response = await fetch("./recipes.json");
     if (!response.ok) {
       throw new Error("Failed to load recipes.json");
     }
     const fileData = await response.json();
-
-    // 2️⃣ قراءة من localStorage
     const localData = JSON.parse(localStorage.getItem("recipes")) || [];
-
-    // 3️⃣ دمج البيانات مع بعض
     const mergedData = [...fileData, ...localData];
 
     return mergedData;
@@ -28,7 +23,7 @@ function createCardElement(product) {
   const fragment = template.content.cloneNode(true);
 
   const imgEl = fragment.querySelector(".product-image");
-  imgEl.src = image || "https://via.placeholder.com/312x231?text=No+Image";
+  imgEl.src = image || "https://placehold.co/312x231?text=No+Image";
   imgEl.alt = title || "Recipe image";
 
   const titleEl = fragment.querySelector(".product-title");
