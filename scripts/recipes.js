@@ -112,8 +112,6 @@ function renderPagination(currentPage, totalPages, totalItems) {
 
   const info = document.createElement("span");
   info.className = "page-info";
-  info.textContent = `Page ${currentPage} of ${totalPages} • ${totalItems} items`;
-
   const nextBtn = document.createElement("button");
   nextBtn.textContent = "Next";
   nextBtn.disabled = currentPage >= totalPages;
