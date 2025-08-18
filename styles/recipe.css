@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
 }
 .product-detail {
@@ -6,7 +6,7 @@
   margin: 0 auto;
   padding: 20px 0;
 }
-  
+
 .back-link:hover {
   text-decoration: underline;
 }
